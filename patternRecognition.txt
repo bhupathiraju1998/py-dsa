@@ -1,0 +1,116 @@
+Great question — this is exactly what separates average problem solving from strong intuition.
+
+Pattern recognition isn’t about memorizing problems, it’s about asking the right signals from the question. Here’s a clean way to think about it 👇
+
+🧠 Step-by-Step Pattern Recognition
+🔹 Step 1: Check the array type
+
+👉 Ask:
+
+Are there negative numbers?
+
+✔ If YES:
+
+➡️ Sliding window is usually ❌
+➡️ Think:
+
+Prefix sum + hashmap
+
+Kadane’s Algorithm
+
+✔ If NO (all positive):
+
+➡️ Sliding window becomes powerful ✅
+
+🔹 Step 2: What is the question asking?
+1. “Find/count subarray with sum = K”
+
+👉 Keywords:
+
+“count”
+
+“exact sum”
+
+➡️ Use: Prefix sum + hashmap
+❌ Not sliding window (if negatives exist)
+
+2. “Longest / smallest subarray with condition”
+
+👉 Keywords:
+
+longest
+
+shortest
+
+at most / at least
+
+✔ If all positive:
+
+➡️ Variable-size sliding window ✅
+
+✔ If negatives:
+
+➡️ Prefix sum / more advanced methods
+
+3. “Maximum / minimum subarray sum”
+
+👉 Keywords:
+
+maximum sum
+
+best sum
+
+➡️ Use:
+
+Kadane’s Algorithm
+
+4. Fixed size K given?
+
+👉 Example:
+
+“subarray of size k”
+
+➡️ Use:
+
+Fixed sliding window ✅
+
+🔹 Step 3: Look for monotonic behavior
+
+👉 Ask:
+
+“If I expand the window, does the value always increase/decrease predictably?”
+
+✔ If YES (monotonic):
+
+➡️ Sliding window works
+
+❌ If NO:
+
+➡️ Use prefix sum
+
+🔥 Quick Decision Table
+Clue in Problem	Technique
+Fixed size K	Fixed sliding window
+Only positive numbers	Sliding window
+Negatives present	Prefix sum / Kadane
+Count subarrays = K	Prefix sum + hashmap
+Max subarray sum	Kadane
+Longest/shortest with constraint	Sliding window (if positive)
+🧠 Mental Shortcut (Very Important)
+
+When you see a problem, ask in order:
+
+Is size fixed? → sliding window
+
+All elements positive? → sliding window
+
+Need exact sum or count? → prefix sum + hashmap
+
+Need max sum? → Kadane
+
+💡 Real Insight (What interviewers expect)
+
+They’re testing whether you realize:
+
+Sliding window = greedy expansion/shrinking works
+Prefix sum = you need memory of past sums
