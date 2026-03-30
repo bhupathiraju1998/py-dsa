@@ -26,3 +26,9 @@ for i in range(1,len(nums)):
 print("Maximum sum:", max_s)
 print("Subarray:", nums[start:end+1])
 print("Indices:", start, "to", end)
+
+
+
+# Maximum subarray sum ≤ k
+# Maximum product subarray
+# Maximum sum circular subarray (with tweaks)
