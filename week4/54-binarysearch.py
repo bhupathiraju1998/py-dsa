@@ -17,3 +17,6 @@ while  l <= r:
     else:
         print(mid)
         break
+
+
+# in binary search for a range of value it will be FFFFTTT or TTTFFFF so from a subrange all are possible or not possible in these scenarios we use binary serach
