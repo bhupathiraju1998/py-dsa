@@ -1,0 +1,1 @@
+# solve in leetcode 141, 142
