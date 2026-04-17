@@ -42,7 +42,7 @@ def max_depth_level_order(root):
     
     queue = deque([root])
     depth = 0
-    
+        
     while queue:
         size = len(queue)
         
